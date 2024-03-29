@@ -38,11 +38,21 @@ List * createList()
   return lista;
 }
 
-void * firstList(List * list) {
+void * firstList(List * list) 
+{
+  list->current = list->head;
+  if(list->head == NULL)
+  {
     return NULL;
+  }
+  
+  return list->head->data
 }
 
-void * nextList(List * list) {
+void * nextList(List * list) 
+{
+
+  
     return NULL;
 }
 
