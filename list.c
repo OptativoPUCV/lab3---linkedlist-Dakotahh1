@@ -52,14 +52,15 @@ void * firstList(List * list)
 void * nextList(List * list) 
 {
   list->current = list->head;
-  
-  while (list->current != NULL)
+  if(list->head == NULL)
   {
-    if(list->current->next != NULL)
-    {
-      list->current = list->current->next;
-    }
+    return NULL;
   }
+  if(list->current->next != NULL)
+  {
+    list->current = list->current->next;
+  }
+    
   return list->current->data;
 }
 
@@ -86,7 +87,7 @@ void * popFront(List * list) {
     list->current = list->head;
     return popCurrent(list);
 }
-1
+
 void * popBack(List * list) {
     list->current = list->tail;
     return popCurrent(list);
