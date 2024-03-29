@@ -39,3 +39,12 @@ Fri 29 Mar 2024 08:13:43 PM UTC:
  tests:  2|5
 total_score: 15/70
 b9d0453
+Fri 29 Mar 2024 08:15:36 PM UTC: 
+ list.c | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c:89:1: error: expected identifier or ‘(’ before numeric constant
+   89 | 1
+      | ^
+Compilation failed
+c630281
