@@ -148,3 +148,16 @@ Fri 29 Mar 2024 08:42:01 PM UTC:
  1 file changed, 2 deletions(-)
  tests:  0|0
 c5ee200
+Fri 29 Mar 2024 08:43:48 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:61:29: error: expected ‘;’ before ‘}’ token
+   61 |   return list->current->data
+      |                             ^
+      |                             ;
+   62 | }
+      | ~                            
+Compilation failed
+a67da53
