@@ -53,12 +53,12 @@ void * nextList(List * list)
 {
   list->current = list->head;
   
-  if(list->current != NULL && list->current->next!= NULL)
+  if(list->current != NULL || list->current->next!= NULL)
   {
     list->current = list->current->next;
   }
 
-  return list->current->data;
+  return NULL;
 }
 
 void * lastList(List * list) {
