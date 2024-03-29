@@ -126,3 +126,14 @@ Fri 29 Mar 2024 08:31:45 PM UTC:
  tests:  3|5
 total_score: 15/70
 cf5fb1f
+Fri 29 Mar 2024 08:41:26 PM UTC: 
+ list.c | 12 ++++--------
+ 1 file changed, 4 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:64:1: error: control reaches end of non-void function [-Werror=return-type]
+   64 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+137dd37
