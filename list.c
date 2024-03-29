@@ -90,12 +90,11 @@ void pushFront(List * list, void * data)
   {
     list->head = nodo;
   }
-  else
-  {
-    nodo->next = list->head;
-    list->head->prev = nodo;
-    list->head = nodo;
-  }
+  
+  nodo->next = list->head;
+  list->head->prev = nodo;
+  list->head = nodo;
+  
 }
 
 void pushBack(List * list, void * data) {
